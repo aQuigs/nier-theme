@@ -1,5 +1,5 @@
 /* Base colors - TODO: are grey 1 and grey 2 used? */
-.theme-dark, .is-mobil.is-mobile.theme-dark {
+.theme-light, .is-mobil.is-mobile.theme-light {
   --accent-h: 219;
   --accent-s: 56%;
   --accent-l: 55%;
@@ -85,18 +85,18 @@
     --dropdown-background : var(--interactive-normal); 
 }
 
-.is-tablet.theme-dark {
+.is-tablet.theme-light {
   --titlebar-background: var(--background-primary);
   --titlebar-background-focused: var(--background-primary);
   --interactive-normal: var(--background-primary);
   --interactive-hover: var(----background-modifier-border-hover);
   --modal-background: var(--background-secondary);
 }
-.is-tablet.theme-dark .vertical-tab-content {
+.is-tablet.theme-light .vertical-tab-content {
   background-color: var(--background-primary);
 }
 
-.is-mobile.theme-dark {
+.is-mobile.theme-light {
   --color-base-00: #000;
   --color-base-10: #111;
   --color-base-20: #1e1e1e;
@@ -111,7 +111,7 @@
 }
 
 
-.theme-light {
+.theme-dark {
   --accent-h: 230;
   --accent-s: 83%;
   --accent-l: 64%;
@@ -160,7 +160,7 @@
   --black: #ffffff;
 }
 
-.theme-dark, .theme-light {
+.theme-light, .theme-dark {
   --ribbon-background: var(--background-primary);
   --drag-ghost-background: var(--background-secondary-alt);
   --background-modifier-message: var(--background-secondary-alt);
@@ -242,8 +242,8 @@ mjx-container {
   font-size: 1.3em;
 }
 
-.theme-light :not(pre)>code,
-.theme-light pre {
+.theme-dark :not(pre)>code,
+.theme-dark pre {
   background: var(--background-primary);
   box-shadow: inset 0 0 0 1px var(--background-primary-alt);
   border-radius: 4px;
@@ -272,7 +272,7 @@ mjx-container {
 }
 
 /* Miscellaneous */
-.theme-dark .dropdown:hover {
+.theme-light .dropdown:hover {
   background-color: var(--background-modifier-form-field);
 }
 
@@ -322,12 +322,12 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged,
   padding: 4px 8px;
 }
 
-.theme-dark button.mod-warning {
+.theme-light button.mod-warning {
   --background-modifier-error: #d42020;
   --background-modifier-error-hover: #b01515;
 }
 
-.theme-light button.mod-warning {
+.theme-dark button.mod-warning {
   --background-modifier-error: #f23f3f;
   --background-modifier-error-hover: #d72020;
 }
@@ -713,11 +713,11 @@ select, .dropdown {
 }
 
 /*graph nodes colors*/
-.theme-dark .graph-view.color-fill-tag {
+.theme-light .graph-view.color-fill-tag {
   color: var(--link-color);
   }
 
-.theme-dark .graph-view.color-fill-attachment {
+.theme-light .graph-view.color-fill-attachment {
     color: #b9b9b9;
 }
 
