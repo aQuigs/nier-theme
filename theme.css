@@ -196,16 +196,8 @@
 }
 
 /* Search */
-.search-result .search-result-file-title {
-  cursor: pointer;
-}
-
-.search-result .collapse-icon {
-  cursor: var(--cursor);
-}
-
 .search-result:not(.is-collapsed) .search-result-file-title {
-  color: var(--blue);
+  color: var(--text-accent);
 }
 
 /* File tab separators */
