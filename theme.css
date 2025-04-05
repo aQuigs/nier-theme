@@ -881,3 +881,28 @@ button:not(.clickable-icon) {
 .search-result-file-match-replace-button:hover{
   color: var(--text-highlight-bg);
 }
+
+/* aquigs custom */
+.graph-view.color-line {
+  color: var(var(--background-secondary))
+}
+
+body {
+  scrollbar-color:  #4b4d4096 #afaa96;
+}
+
+
+.templater-command-bg.cm-line, .templater-inline.cm-line span, .HyperMD-codeblock.HyperMD-codeblock-bg.cm-line {
+  background-color: #ddd8c7 !important;
+}
+
+.HyperMD-codeblock.HyperMD-codeblock-bg.cm-line span {
+  color: #4b4d40;
+}
+
+.theme-light :not(pre)>code,
+.theme-light pre {
+  background: var(--background-primary);
+  box-shadow: inset 0 0 0 1px var(--background-primary-alt);
+  border-radius: 4px;
+}
