@@ -4,13 +4,15 @@
   --accent-s: 56%;
   --accent-l: 55%;
 
+  --tab-divider-color: var(--background-modifier-border);
+
   --interactive-accent: #6e695b;
   --background-primary: #ddd8c7;
   --background-primary-alt: rgba(172, 167, 147, 255);
   --background-secondary: #afaa96;
-  --background-secondary-alt: #4a473e; 
+  --background-secondary-alt: #4a473e;
   /* --background-secondary-alt: #afaa96; */
-  --background-accent: #000;
+  --background-accent: var(--background-secondary-alt);
   --background-modifier-border: #424958;
   --background-modifier-form-field: rgba(0, 0, 0, 0.3);
   --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22);
@@ -179,6 +181,7 @@
   --checkbox-color-hover: var(--link-color);
   --checkbox-border-color-hover: var(--link-color);
 
+  /* --nav-item-background-active: var(--interactive-accent); */
   --nav-item-background-active: var(--interactive-accent);
   --nav-item-color-active: #ffffff;
 
@@ -835,12 +838,11 @@ body {
 .nav-file {
   --background-color-hover: red
 }
-/* 
-.workspace-tab-header-inner {
-  color: var(--background-secondary)
-} */
-/* 
 
-.workspace-tab-header-container, .sidebar-toggle-button mod-right {
-  background-color: var(--background-secondary);
-} */
+.workspace-tab-header-container, .workspace-ribbon.side-dock-ribbon.mod-left::before {
+  background-color: var(--background-primary-alt);
+}
+
+.sidebar-toggle-button.mod-right {
+  background-color: var(--background-primary-alt) !important;
+}
