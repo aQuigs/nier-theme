@@ -8,8 +8,8 @@
   --background-primary: #ddd8c7;
   --background-primary-alt: rgba(172, 167, 147, 255);
   --background-secondary: #afaa96;
-  /* --background-secondary-alt: #4a473e;  */
-  --background-secondary-alt: #afaa96;
+  --background-secondary-alt: #4a473e; 
+  /* --background-secondary-alt: #afaa96; */
   --background-accent: #000;
   --background-modifier-border: #424958;
   --background-modifier-form-field: rgba(0, 0, 0, 0.3);
@@ -30,7 +30,7 @@
   --text-selection: rgba(0, 122, 255, 0.2);
   --text-on-accent: #dcddde;
   --interactive-normal: #20242b;
-  --interactive-hover: #353b47;
+  --interactive-hover: #1f52b6;
   --interactive-accent-hover: hsl(var(--accent-h), calc(var(--accent-s) + 5%), calc(var(--accent-l) - 10%));
   --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
   --scrollbar-bg: rgba(255, 255, 255, 0.05);
@@ -805,7 +805,7 @@ button:not(.clickable-icon) {
 
 /* aquigs custom */
 .graph-view.color-line {
-  color: var(var(--background-secondary))
+  color: var(--background-secondary)
 }
 
 body {
@@ -831,3 +831,16 @@ body {
 .is-flashing {
   background-color: var(--link-color);
 }
+
+.nav-file {
+  --background-color-hover: red
+}
+/* 
+.workspace-tab-header-inner {
+  color: var(--background-secondary)
+} */
+/* 
+
+.workspace-tab-header-container, .sidebar-toggle-button mod-right {
+  background-color: var(--background-secondary);
+} */
