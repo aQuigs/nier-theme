@@ -14,6 +14,7 @@
   --background-secondary-alt: #4a473e;
   /* --background-secondary-alt: #afaa96; */
   --background-accent: var(--background-secondary-alt);
+  --color-accent: var(--background-secondary-alt);
   --background-modifier-border: #424958;
   --background-modifier-form-field: rgba(0, 0, 0, 0.3);
   --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22);
@@ -848,6 +849,7 @@ body {
   background-color: var(--background-primary-alt) !important;
 }
 
-.mb-input-wrapper input {
+/* fix input boxes */
+.mb-input-wrapper input, .search-input-container input, .setting-item-control input, .setting-item-control textarea, .kanban-plugin__setting-key-input-wrapper input {
   background-color: var(--background-secondary);
 }
