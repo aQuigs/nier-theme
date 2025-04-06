@@ -5,6 +5,7 @@
   --accent-l: 55%;
 
   --tab-divider-color: var(--background-modifier-border);
+  --code-background-color: #ddd8c7BB;
 
   --interactive-accent: #6e695b;
   --background-primary: #ddd8c7;
@@ -817,16 +818,16 @@ body {
 
 
 .templater-command-bg.cm-line, .templater-inline.cm-line span, .HyperMD-codeblock.HyperMD-codeblock-bg.cm-line {
-  background-color: #ddd8c7BB !important;
+  background-color: var(--code-background-color) !important;
 }
 
 .templater-command-bg.cm-line span:nth-of-type(1) {
   padding-inline-start: var(--size-4-4) !important;
 }
 
-.theme-light :not(pre)>code,
+.theme-light :not(pre)>code:not(.mb-input),
 .theme-light pre {
-  background: var(--background-primary);
+  background: var(--code-background-color);
   box-shadow: inset 0 0 0 1px var(--background-primary-alt);
   border-radius: 4px;
 }
@@ -847,24 +848,6 @@ body {
   background-color: var(--background-primary-alt) !important;
 }
 
-div.el-p p code div input {
-  background-color: red;
-  width: 100% !important;
-  max-width: 100% !important;
-  box-sizing: border-box;
-  border: 1px solid yellow; /* Optional: border to make it visible */
-
-  margin: 0;
-  padding: 0;
-}
-
-div.el-p p code div {
-  background-color: red;
-  width: 100% !important;
-  max-width: 100% !important;
-  box-sizing: border-box;
-  border: 1px solid green; /* Optional: border to make it visible */
-
-  margin: 0;
-  padding: 0;
+.mb-input-wrapper input {
+  background-color: var(--background-secondary);
 }
