@@ -293,17 +293,6 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged,
   font-weight: var(--nav-item-weight-active);
 }
 
-.nav-file-title, .nav-folder-title {
-  margin-bottom: var(--size-2-1);
-  display: flex;
-  border-radius: var(--radius-s);
-  cursor: var(--cursor);
-  color: #434037;
-  font-size: 16px;
-  font-weight: var(--nav-item-weight);
-  line-height: var(--line-height-tight);
-}
-
 
 .view-header-title {
   text-decoration: underline;
@@ -662,9 +651,8 @@ img[alt*="left"] {
 }
 .collapse-icon.is-collapsed::before {
   transform: rotate(0);
-  background-position: 25% 105%;
+  background-position: 50% 50%;
 }
-
 
 .markdown-source-view.mod-cm6 .cm-fold-indicator .collapse-indicator {
   position: absolute;
@@ -850,6 +838,7 @@ body {
   background-color: var(--background-secondary);
 }
 
-.tagfolder-quantity span {
+/* fix tag folder */
+.tf-taglist .tf-tag, .tagfolder-quantity span {
   color: var(--background-secondary);
 }
