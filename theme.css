@@ -279,10 +279,6 @@ mjx-container {
   color: var(--text-muted);
 }
 
-.nav-file, .nav-folder {
-  padding: 1px 2px;
-}
-
 body:not(.is-grabbing) .nav-file-title.is-being-dragged,
 body:not(.is-grabbing) .nav-folder-title.is-being-dragged,
 .nav-file-title.is-being-dragged,
@@ -852,4 +848,8 @@ body {
 /* fix input boxes */
 .mb-input-wrapper input, .search-input-container input, .setting-item-control input, .setting-item-control textarea, .kanban-plugin__setting-key-input-wrapper input {
   background-color: var(--background-secondary);
+}
+
+.tagfolder-quantity span {
+  color: var(--background-secondary);
 }
