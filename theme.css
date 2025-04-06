@@ -55,7 +55,7 @@
   --link-color: rgb(148, 3, 3);
   --link-weight: 500;
   --link-unresolved-color: rgb(57, 0, 0);
-  --text-accent-hover: rgb(93, 66, 173);
+  /* --text-accent-hover: rgb(93, 66, 173); */
 
     --callout-bug: var(--color-red-rgb);
     --callout-default: var(--color-blue-rgb);
@@ -176,7 +176,8 @@
   --background-modifier-border-focus: var(--interactive-hover);
 
   --checkbox-color: var(--text-accent);
-  --checkbox-color-hover: var(--text-accent-hover);
+  --checkbox-color-hover: var(--link-color);
+  --checkbox-border-color-hover: var(--link-color);
 
   --nav-item-background-active: var(--interactive-accent);
   --nav-item-color-active: #ffffff;
@@ -349,67 +350,6 @@ pre[class*='language-'] {
   padding: .1em !important;
   border-radius: .3em !important;
   white-space: normal !important;
-}
-
-.token.comment, .token.prolog, .token.doctype, .token.cdata,
-.HyperMD-codeblock .cm-comment {
-  color: var(--gray-1) !important;
-}
-
-.token.punctuation,
-.HyperMD-codeblock .cm-hmd-codeblock, .HyperMD-codeblock .cm-bracket {
-  color: var(--gray-2) !important;
-}
-
-.token.selector, .token.tag,
-.HyperMD-codeblock .cm-tag, .HyperMD-codeblock .cm-property, .HyperMD-codeblock .cm-meta, .HyperMD-codeblock .cm-qualifier, .HyperMD-codeblock .cm-header, .HyperMD-codeblock .cm-quote, .HyperMD-codeblock .cm-hr, .HyperMD-codeblock .cm-link {
-  color: var(--red) !important;
-}
-
-.token.property, .token.boolean, .token.number, .token.constant, .token.symbol, .token.attr-name, .token.deleted,
-.HyperMD-codeblock .cm-number, .HyperMD-codeblock .cm-atom, .HyperMD-codeblock .cm-attribute {
-  color: var(--orange) !important;
-}
-
-.token.string, .token.char, .token.attr-value, .token.builtin, .token.inserted,
-.HyperMD-codeblock .cm-string, .HyperMD-codeblock .cm-builtin {
-  color: var(--green) !important;
-}
-
-.token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string,
-.HyperMD-codeblock .cm-string-2, .HyperMD-codeblock .cm-operator {
-  color: var(--aqua) !important;
-}
-
-.token.atrule, .token.keyword,
-.HyperMD-codeblock .cm-keyword {
-  color: var(--purple) !important;
-}
-
-.token.function, .token.macro.property,
-.HyperMD-codeblock .cm-def, .HyperMD-codeblock .cm-variable {
-  color: var(--blue) !important;
-}
-
-.token.class-name,
-.HyperMD-codeblock .cm-variable-2, .HyperMD-codeblock .cm-variable-3 {
-  color: var(--yellow) !important;
-}
-
-.token.regex, .token.important, .token.variable {
-  color: var(--purple) !important;
-}
-
-.token.important, .token.bold {
-  font-weight: bold !important;
-}
-
-.token.italic {
-  font-style: italic !important;
-}
-
-.token.entity {
-  cursor: help !important;
 }
 
 /*section top left logo*/
@@ -666,25 +606,6 @@ button:not(.clickable-icon) {
   cursor: var(--cursor);
 }
 
-/*code bloc bacground color and text fix*/
-.cm-s-obsidian div.HyperMD-codeblock-begin-bg, .cm-s-obsidian div.HyperMD-codeblock-end-bg {
-  background-color: rgb(0 0 0);
-}
-
-.cm-s-obsidian div.HyperMD-codeblock-bg {
-  left: 0;
-  right: 0;
-  background-color: rgb(0 0 0);
-}
-
-:not(pre) > code[class*="language-"], pre[class*="language-"] {
-  background: rgb(0 0 0);
-}
-
-.token.function, .token.macro.property, .HyperMD-codeblock .cm-def, .HyperMD-codeblock .cm-variable {
-  color: var(--background-primary) !important;
-}
-
 /*aligne image on the left and on the right*/
 img[alt*="center"] {
   display: block;
@@ -893,11 +814,7 @@ body {
 
 
 .templater-command-bg.cm-line, .templater-inline.cm-line span, .HyperMD-codeblock.HyperMD-codeblock-bg.cm-line {
-  background-color: #ddd8c7 !important;
-}
-
-.HyperMD-codeblock.HyperMD-codeblock-bg.cm-line span {
-  color: #4b4d40;
+  background-color: #ddd8c7BB !important;
 }
 
 .theme-light :not(pre)>code,
