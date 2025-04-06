@@ -817,6 +817,10 @@ body {
   background-color: #ddd8c7BB !important;
 }
 
+.templater-command-bg.cm-line span:nth-of-type(1) {
+  padding-inline-start: var(--size-4-4) !important;
+}
+
 .theme-light :not(pre)>code,
 .theme-light pre {
   background: var(--background-primary);
