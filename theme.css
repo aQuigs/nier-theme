@@ -846,3 +846,25 @@ body {
 .sidebar-toggle-button.mod-right {
   background-color: var(--background-primary-alt) !important;
 }
+
+div.el-p p code div input {
+  background-color: red;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box;
+  border: 1px solid yellow; /* Optional: border to make it visible */
+
+  margin: 0;
+  padding: 0;
+}
+
+div.el-p p code div {
+  background-color: red;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box;
+  border: 1px solid green; /* Optional: border to make it visible */
+
+  margin: 0;
+  padding: 0;
+}
