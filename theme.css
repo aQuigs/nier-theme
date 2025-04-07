@@ -178,7 +178,7 @@
   --modal-border-color: var(--panel-border-color);
 
   --background-modifier-border-hover: var(--interactive-hover);
-  --background-modifier-border-focus: var(--interactive-hover);
+  --background-modifier-border-focus: var(--background-primary);
 
   --checkbox-color: var(--text-accent);
   --checkbox-color-hover: var(--link-color);
