@@ -809,10 +809,10 @@ body {
 .templater-command-bg.cm-line, .templater-inline.cm-line span, .HyperMD-codeblock.HyperMD-codeblock-bg.cm-line {
   background-color: var(--code-background-color) !important;
 }
-
+/* 
 .templater-command-bg.cm-line span:nth-of-type(1) {
   padding-inline-start: var(--size-4-4) !important;
-}
+} */
 
 .theme-light :not(pre)>code:not(.mb-input),
 .theme-light pre {
