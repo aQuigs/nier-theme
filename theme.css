@@ -4,9 +4,6 @@
   --accent-s: 56%;
   --accent-l: 55%;
 
-  --tab-divider-color: var(--background-modifier-border);
-  --code-background-color: #ddd8c7BB;
-
   --interactive-accent: #6e695b;
   --background-primary: #ddd8c7;
   --background-primary-alt: rgba(172, 167, 147, 255);
@@ -61,33 +58,39 @@
   --link-unresolved-color: rgb(57, 0, 0);
   /* --text-accent-hover: rgb(93, 66, 173); */
 
-    --callout-bug: var(--color-red-rgb);
-    --callout-default: var(--color-blue-rgb);
-    --callout-error: var(--color-red-rgb);
-    --callout-example: var(--color-purple-rgb);
-    --callout-fail: var(--color-red-rgb);
-    --callout-important: var(--color-cyan-rgb);
-    --callout-info: var(--color-blue-rgb);
-    --callout-question: var(--color-orange-rgb);
-    --callout-success: var(--color-green-rgb);
-    --callout-summary: var(--color-cyan-rgb);
-    --callout-tip: var(--color-cyan-rgb);
-    --callout-todo: var(--color-blue-rgb);
-    --callout-warning: var(--color-orange-rgb);
-    --callout-quote: 158, 158, 158;
-    --code-background: rgba(255, 255, 255, 0.352);
+  --callout-bug: var(--color-red-rgb);
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
+  --callout-question: var(--color-orange-rgb);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
+  --callout-quote: 158, 158, 158;
+  --code-background: rgba(255, 255, 255, 0.352);
 
-    --interactive-normal: #a7957d;
-    --interactive-hover : #aea395;
+  --interactive-normal: #a7957d;
+  --interactive-hover : #aea395;
 
-    --icon-color : black;
+  --icon-color : black;
 
-    --indentation-guide-color: var(--interactive-accent);
-    --code-property : rgb(51, 77, 190);
-    --code-value : rgb(161, 83, 170);
-    --code-keyword : rgb(188, 106, 124);
+  --indentation-guide-color: var(--interactive-accent);
+  --code-property : rgb(51, 77, 190);
+  --code-value : rgb(161, 83, 170);
+  --code-keyword : rgb(188, 106, 124);
 
-    --dropdown-background : var(--interactive-normal);
+  --dropdown-background : var(--interactive-normal);
+
+
+  /* aquigs */
+  --tab-divider-color: var(--background-modifier-border);
+  --code-background-color: #ddd8c7BB;
+
 }
 
 .is-tablet.theme-light {
@@ -842,4 +845,8 @@ body {
 /* fix tag folder */
 .tf-taglist .tf-tag, .tagfolder-quantity span {
   color: var(--background-secondary);
+}
+
+.day.today {
+  color: var(--link-color) !important;
 }
