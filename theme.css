@@ -91,6 +91,8 @@
   --tab-divider-color: var(--background-modifier-border);
   --code-background-color: #ddd8c7BB;
 
+  --titlebar-background: var(--background-secondary);
+  --titlebar-background-focused: var(--background-secondary);
 }
 
 .is-tablet.theme-light {
