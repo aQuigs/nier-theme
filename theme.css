@@ -88,11 +88,14 @@
 
 
   /* aquigs */
+  --icon-color-focused: var(--background-primary);
   --tab-divider-color: var(--background-modifier-border);
   --code-background-color: #ddd8c7BB;
 
   --titlebar-background: var(--background-secondary);
   --titlebar-background-focused: var(--background-secondary);
+
+  --setting-items-background: var(--background-primary);
 }
 
 .is-tablet.theme-light {
@@ -851,4 +854,17 @@ body {
 
 .day.today {
   color: var(--link-color) !important;
+}
+
+.vertical-tab-header {
+  background-color: var(--background-secondary);
+}
+
+.vertical-tab-nav-item.is-active {
+  background-color: var(--interactive-accent) !important;
+  color: var(--text-on-accent) !important;
+}
+
+.vertical-tab-nav-item.is-active .vertical-tab-nav-item-icon {
+  color: var(--text-on-accent) !important;
 }
