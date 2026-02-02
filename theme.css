@@ -820,7 +820,8 @@ body {
 } */
 
 .theme-light :not(pre)>code:not(.mb-input),
-.theme-light pre {
+.theme-light pre,
+.cm-inline-code {
   background: var(--code-background-color);
   box-shadow: inset 0 0 0 1px var(--background-primary-alt);
   border-radius: 4px;
