@@ -7,6 +7,7 @@
   --interactive-accent: #6e695b;
   --background-primary: #ddd8c7;
   --background-primary-alt: rgba(172, 167, 147, 255);
+  --background-primary-faint: #d3cebb;
   --background-secondary: #afaa96;
   --background-secondary-alt: #6e695b;
   /* --background-secondary-alt: #afaa96; */
@@ -95,7 +96,7 @@
   --titlebar-background: var(--background-secondary);
   --titlebar-background-focused: var(--background-secondary);
 
-  --setting-items-background: var(--background-primary);
+  --setting-items-background: var(--background-primary-faint);
 }
 
 .is-tablet.theme-light {
