@@ -850,6 +850,15 @@ body {
   background-color: var(--background-secondary);
 }
 
+.mb-input-wrapper input:hover, .search-input-container input:hover, .setting-item-control input:hover, .setting-item-control textarea:hover, .kanban-plugin__setting-key-input-wrapper input:hover {
+  color: var(--background-primary);
+  --input-placeholder-color: var(--background-primary-faint);
+}
+
+.search-input-container:has(input:hover) {
+  --search-icon-color: var(--background-primary);
+}
+
 /* fix tag folder */
 .tf-taglist .tf-tag, .tagfolder-quantity span {
   color: var(--background-secondary);
