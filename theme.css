@@ -370,6 +370,10 @@ pre[class*='language-'] {
 .is-focused .titlebar-inner {
   color: white;
 }
+/*section settings window titlebar*/
+.is-focused.is-popout-modal .titlebar-inner {
+  color: var(--text-normal);
+}
 /*section inline title*/
 .inline-title {
   margin-bottom: 20px;
